@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+*, html, body{ 
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+    text-decoration: none; 
+    box-sizing: border-box; 
+    outline: none; 
+    font-family: Arial, sans-serif;
+}
+body{ 
+    width: 100%; height: 100vh; 
+    overflow: hidden; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background: lightblue; 
+    background-size: cover;
+}
+#startWindow{ 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0, 0, 0, .8);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    transition: 1s;
+}
+#startWindow img, #comp{ 
+    height: 100px; 
+    cursor: pointer;
+}
+#key{ margin: 0 50px;}
+#comp:hover{ text-shadow: 0 0 150px #fff;}
+#key:hover{ box-shadow: 0 0 150px #fff; background: rgba(243, 237, 237, 0.2); }
+#mouse:hover{ box-shadow: 0 0 150px #fff; background: rgba(243, 237, 237, 0.2);}
+
+#comp{ 
+    font-size: 130px; 
+    margin-right: 50px; 
+    color: #fff; 
+    line-height: 100px;
+}
+.text{ 
+    position: absolute; 
+    left: 0; 
+    top: 50px; 
+    width: 100%; 
+    color: #fff;  
+    font-size: 50px; 
+    text-align: center;
+}
+#reset{ 
+    padding: 20px; 
+    color: #fff; 
+    background: black; 
+    border: 0; 
+    position: absolute; 
+    left: 50%; 
+    margin-left: -90px;  
+    top: 0; 
+    border-radius: 0 0 20px 20px; 
+    cursor: pointer;
+}
